@@ -1,0 +1,735 @@
+
+body {
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+}
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+
+p {
+    margin: 0 0 10px;
+}
+
+
+ul, li {
+    list-style: none;
+}
+
+
+.container {
+   width: 100%;
+
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+
+.panel {
+    max-width: 1349px;
+    width: 100%;
+    height: 95px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: lightcyan;
+}
+
+
+
+.panel__top {
+    padding-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.panel__logo {
+    margin-left: 40px;
+}
+
+
+
+.nav {
+    margin-right: 60px;
+    display: flex;
+    height: 100%;
+    position: relative;
+}
+
+
+
+.nav__item {
+    padding-right: 25px;
+    color: #444444;
+    font-size: 14px;
+    line-height: 1;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: 0.20s linear;
+}
+
+
+
+.nav__item:hover {
+    background-color: #1bbc9b;
+    color: #fff;
+}
+
+
+
+.nav__cursor {
+    position: absolute;
+    left: 133px;
+    top: 25px;
+}
+
+
+.burger {
+    height: 20px;
+    width: 20px;
+    display: none;
+}
+
+
+.burger__icon {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.header {
+    height: 100vh;
+    background: url(../img/jumbo.jpg) center bottom no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.header__intro {
+    padding-top: 80px;
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+.header__title {
+    margin-bottom: 40px;
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+.header__title span {
+    font-weight: 200;
+}
+
+
+
+.header__text {
+    margin-bottom: 45px;
+    font-size: 18px;
+    color: #d5d4d2;
+    line-height: 1.5;
+    font-weight: 200;
+    font-family: 'Lato light', sans-serif;
+    opacity: 0.70;
+}
+
+
+
+.header__btn {
+    text-align: center;
+}
+
+
+.btn-btn {
+    display: inline-block;
+    padding: 14px 15px;
+    letter-spacing: 0.15em;
+    transition: 0.10s linear;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    outline: none;
+    background-color: #1bbc9b;
+    margin-bottom: 50px;
+    text-decoration: none;
+}
+
+
+
+.btn--green:hover {
+    background-color: teal;
+}
+
+
+#modal {
+    font-family: "times new roman", sans-serif;
+}
+
+
+.slick-arrow  {
+    font-size: 0px;
+    cursor: pointer;
+}
+
+
+.slick-slide {
+    outline: none;
+}
+
+
+.slick-next {
+    position: relative;
+    bottom: 0;
+    width: 45px;
+    height: 45px;
+    border: 1px solid aliceblue;
+    background: url(../img/angle-down.svg) aliceblue 50% 30% /70% no-repeat;
+    outline: none;
+    border-radius: 50%;
+}
+
+
+
+ .slick-prev {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    width: 45px;
+    height: 45px;
+    border: 1px solid aliceblue;
+    background: url(../img/angle-down.svg) aliceblue 50% 30% /70% no-repeat;
+    outline: none;
+    border-radius: 50%;
+    transform: translatex(-50%);
+}
+
+
+
+.slick-list {
+    max-height: 300px;
+    padding: 125px 0px;
+    overflow: hidden;
+}
+
+
+
+.portfolio {
+    background-color: #fff;
+    padding: 55px 0px;
+    display: flex;
+}
+
+
+.portfolio__item {
+    text-align: center;
+}
+
+
+.portfolio__title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #444444;
+    line-height: 1;
+}
+
+
+.portfolio__text {
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #444444;
+    line-height: 1;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 12px 12px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 0.10em;
+    margin: 0px 5px;
+    transition: 0.20s linear;
+    background-color: #1bbc9b;
+    margin-bottom: 45px;
+}
+
+
+.row--btn:hover{
+    background-color: teal;
+}
+
+
+.portfolio__images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+
+.portfolio__icon {
+    display: block;
+    width: 22%;
+    text-align: center;
+}
+
+
+.portfolio__icon img {
+    max-width: 100%;
+    height: auto;
+    margin: 0px 0px 30px 30px;
+}
+
+
+.about {
+    background-color: #16a086;
+    padding: 55px 0px 70px;
+}
+
+
+.about__inner {
+   text-align: center;
+}
+
+
+.about__title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 1;
+    color: #fff;
+    font-weight: normal;
+}
+
+.about__text {
+    margin-bottom: 45px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 1;
+}
+
+
+.about__column {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.about__block {
+    position: relative;
+    width: 100%;
+    max-width: 220px;
+    margin: 0px 32px;
+}
+
+
+
+.about__photo {
+    padding-bottom: 20px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+.about__content {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+.about__name {
+    margin-bottom: 7px;
+    font-size: 18px;
+    color: #444444;
+    line-height: 1;
+    text-align: center;
+}
+
+
+.about__comen {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #444444;
+    line-height: 1;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.about__subtitle {
+    max-width: 220px;
+    font-size: 14px;
+    color: #444444;
+    line-height: 1.4;
+    padding-bottom: 20px;
+    padding-left: 12px;
+}
+
+
+.social {
+    padding: 10px 10px;
+    position: absolute;
+    display: flex;
+    bottom: 275px;
+    left: 18px;
+    height: 50px;
+    width: 182px;
+    z-index: 1;
+    background-color: rgb(56,157,132,0.85);
+}
+
+
+.social__item {
+    margin-right: 12px;
+    display: flex;
+    max-width: 18%;
+    text-align: center;
+}
+
+
+.social__icon {
+     display: block;
+     fill: #fff;
+     transition: 0.10s linear;
+}
+
+
+.social__icon:hover {
+    fill: darkolivegreen;
+}
+
+
+.social__cursor {
+    position: absolute;
+    display: block;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.contact {
+    background-color: #ecf0f1;
+    padding: 55px 0px;
+}
+
+
+.contact__top {
+    text-align: center;
+}
+
+
+.contact__title {
+    margin-bottom: 20px;
+    color: #444444;
+    font-size: 28px;
+    line-height: 1;
+}
+
+
+.contact__text {
+    margin-bottom: 53px;
+    color: #444444;
+    font-size: 14px;
+    line-height: 1;
+}
+
+
+.form__block {
+    display: flex;
+    justify-content: center;
+}
+
+
+.form__inner {
+    display: flex;
+    width: 460px;
+}
+
+
+.input-left {
+    margin-bottom: 20px;
+    padding-left: 12px;
+    width: 220px;
+    height: 45px;
+    font-size: 14px;
+    font-style: italic;
+    color: #999999;
+    margin-right: 20px;
+    border: 2px solid #bec3c7;
+}
+
+
+.input-right {
+    margin-bottom: 20px;
+    padding-left: 12px;
+    width: 220px;
+    height: 45px;
+    font-size: 14px;
+    font-style: italic;
+    color: #999999;
+    border: 2px solid #bec3c7;
+}
+
+
+textarea {
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 12px;
+    width: 460px;
+    height: 150px;
+    font-size: 14px;
+    font-style: italic;
+    border: 2px solid #bec3c7;
+}
+
+
+.submit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.submit__btn {
+    border: transparent;
+    text-align: center;
+    height: 40px;
+    width: 114px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.10rem;
+    background-color: #1bbc9b;
+    transition: 0.10s linear;
+    outline: none;
+}
+
+
+.submit__btn:hover {
+    background-color: cadetblue;
+}
+
+
+.info {
+    width: 460px;
+    height: auto;
+    margin-left: 20px;
+}
+
+
+.info__link-top {
+    margin-bottom: 15px;
+    color: #444444;
+}
+
+
+.info__link {
+    padding-left: 15px;
+    color: #444444;
+    font-size: 14px;
+    line-height: 1.7;
+    position: relative;
+}
+
+
+.social__marker {
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    z-index: 1;
+    color: #444444;
+    font-size: 14px;
+}
+
+
+.info__link-midle {
+    margin-bottom: 20px;
+    color: #444444;
+    padding-left: 18px;
+}
+
+
+.info__link-center {
+    padding-left: 18px;
+    margin-bottom: 15px;
+    color: #444444;
+    position: relative;
+}
+
+
+.social__phone {
+    position: absolute;
+    top: 1px;
+    left:  0px;
+    z-index: 1;
+    color: #444444;
+    font-size: 16px;
+    border-radius: 50%;
+}
+
+
+.info__link-bottom {
+    padding-left: 18px;
+    margin-bottom: 15px;
+    color: #444444;
+    position: relative;
+}
+
+
+.social__fax {
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    z-index: 1;
+    color: #444444;
+    font-size: 14px;
+}
+
+
+.info__link-row {
+    padding-left: 18px;
+    color: #444444;
+    position: relative;
+}
+
+.social__envelope {
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    z-index: 1;
+    color: #444444;
+    font-size: 14px;
+}
+
+
+.footer {
+    background-color: #2d3e50;
+    padding: 25px 0px;
+    min-height: 87px;
+}
+
+
+.footer__wrrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 40px;
+
+}
+
+
+.footer__text a {
+    font-size: 14px;
+    color: #fff;
+    line-height: 1;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+.footer__text:hover {
+    text-decoration: underline;
+}
+
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    background: url(../img/angle-down-2.svg) #1bbc9b 50% 50% /40% no-repeat;
+    transform: rotate(-180deg);
+}
+
+
+
+
+@media (max-width: 1024px){
+
+    .header {
+    background: url(../img/jumbo.jpg) center bottom no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 650px;
+    }
+}
+
+
+
+@media (max-width: 768px){
+
+    .nav {
+       width: 350px;
+    }
+
+
+    .header {
+    background: url(../img/jumbo.jpg) center bottom no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 650px;
+
+    }
+
+
+    .portfolio__images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portfolio__icon {
+        margin-right: 20px;
+        width: 150px;
+    }
+
+    .social {
+        margin: auto -7px;
+        width: 160px;
+    }
+
+}
+
+
+
+
+
