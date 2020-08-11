@@ -141,6 +141,7 @@ ul, li {
 }
 
 
+
 .header__title span {
     font-weight: 200;
 }
@@ -217,7 +218,7 @@ ul, li {
  .slick-prev {
     position: absolute;
     z-index: 1;
-    bottom: 0;
+    bottom: 0px;
     width: 45px;
     height: 45px;
     border: 1px solid aliceblue;
