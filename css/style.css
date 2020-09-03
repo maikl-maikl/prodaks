@@ -104,6 +104,7 @@ ul, li {
 }
 
 
+
 .burger__icon {
     display: block;
     max-width: 100%;
@@ -612,6 +613,7 @@ textarea {
 }
 
 
+
 .social__fax {
     position: absolute;
     top: 1px;
@@ -627,6 +629,7 @@ textarea {
     color: #444444;
     position: relative;
 }
+
 
 .social__envelope {
     position: absolute;
@@ -650,7 +653,6 @@ textarea {
     justify-content: space-between;
     align-items: center;
     margin: 0px 40px;
-
 }
 
 
@@ -684,13 +686,14 @@ textarea {
 @media (max-width: 1024px){
 
     .header {
-    background: url(../img/jumbo.jpg) center bottom no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 650px;
-    }
+     background: url(../img/jumbo.jpg) center bottom no-repeat;
+     background-size: cover;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     height: 650px;
+ }
+
 }
 
 
@@ -703,15 +706,13 @@ textarea {
 
 
     .header {
-    background: url(../img/jumbo.jpg) center bottom no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 650px;
-
-    }
-
+     background: url(../img/jumbo.jpg) center bottom no-repeat;
+     background-size: cover;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     height: 650px;
+ }
 
     .portfolio__images {
         display: flex;
@@ -731,6 +732,55 @@ textarea {
 }
 
 
+@media (max-width: 414px){
 
+
+    .nav {
+        display: none;
+    }
+
+
+   .burger {
+        display: block;
+    }
+
+
+    .panel__top {
+        width: 100%;
+    }
+
+
+    .header {
+        width: 100%;
+    }
+
+
+    .header__title {
+       font-size: 3.1rem;
+    }
+
+
+    .btn-btn {
+        display: none;
+    }
+
+
+
+    .slick-list {
+        padding: 20px;
+    }
+
+
+    .form__block {
+        display: none;
+    }
+
+
+    .contact {
+        width: 100%;
+    }
+
+
+}
 
 
