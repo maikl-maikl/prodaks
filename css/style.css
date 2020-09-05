@@ -807,7 +807,6 @@ textarea {
        width: 75%;
     }
 
-
 }
 
 
@@ -829,13 +828,39 @@ textarea {
     .portfolio__icon {
         width: 100%;
         margin-right: 20px;
+    }
 
+}
+
+
+@media(max-width: 360px){
+
+    .slick-list {
+        padding: 0;
     }
 
 
+     .header__title {
+       font-size: 3.1rem;
+       margin-bottom: 40px;
+    }
 
-
+    .header__text {
+        margin-bottom: 20px;
+    }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
