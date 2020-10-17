@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Bak-One</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
@@ -57,7 +57,7 @@
          <div class="panel__logo">
             <img class="logo"src="img/logo.png" alt="">
          </div>
-      <nav class="nav">
+       <nav class="nav" id="nav">
             <img class="nav__cursor" src="img/cursor.png" alt="">
             <a class="nav__item" href="#">HOME</a>
             <a class="nav__item  active" href="#">PORTFOLIO</a>
@@ -65,9 +65,9 @@
             <a class="nav__item" href="#">CONTACT</a>
          </nav>
 
-       <div class="burger">
+        <button class="burger" type="button" id="navToggle">
             <img class="burger__icon" src="img/burger.svg" alt="">
-        </div>
+        </button>
      </div>
   </div> <!--container-->
 </div><!--panel-->
@@ -88,7 +88,7 @@
                      <h2>Hello!</h2><br>
                      <p>You are awesome!</p>
                  </div>
-              </div>-+
+              </div>
            </div>
       </div><!--container-->
 </header><!--header-->
@@ -257,9 +257,11 @@
 </footer><!--footer-->
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-     <script scr="js/jquery.fancybox.min.js"></script>
+
      <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
      <script src="js/slick.min.js"></script>
      <script src="js/main.js"></script>
+
 </body>
 </html>

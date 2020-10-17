@@ -1,5 +1,5 @@
 
-$(function(){
+$(function() {
 
     $('.header__intro').slick({
 
@@ -13,7 +13,8 @@ $(function(){
 
   });
 
-$(window).scroll(function(){
+
+$(window).scroll(function() {
 
         if ($(this).scrollTop() > 100) {
         if ($('.footer__social').is(':hidden')) {
@@ -24,13 +25,21 @@ $(window).scroll(function(){
 
            $('.footer__social').click(function() {
            $('html, body').stop().animate({scrollTop : 0}, 300);
-  });
+
+
+ });
 
 
 
 
+      const navToggle = $('#navToggle');
+      const nav = $('#nav');
 
+      navToggle.on('click', function(event) {
+      event.preventDefault();
 
+      nav.toggleClass('show');
+ });
 
 
 
