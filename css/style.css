@@ -410,7 +410,7 @@ ul, li {
     padding: 10px 10px;
     position: absolute;
     display: flex;
-    bottom: 275px;
+    bottom: 285px;
     left: 18px;
     height: 50px;
     width: 182px;
@@ -423,7 +423,7 @@ ul, li {
 .social__item {
     margin-right: 12px;
     display: flex;
-    max-width: 18%;
+    width: 18%;
     text-align: center;
 }
 
@@ -705,7 +705,7 @@ textarea {
 
 .nav.show a {
      display: block;
-     width: 450px;
+     width: 420px;
      height: 70px;
      font-size: 20px;
      color: aliceblue;
@@ -718,6 +718,7 @@ textarea {
 
 
 @media screen and (max-width: 1200px) {
+
     .container {
         width: 100%;
     }
@@ -737,28 +738,35 @@ textarea {
 
 
 @media screen and (max-width: 768px) {
+
     .nav {
         width: 350px;
     }
 
+
+
     .burger {
         display: none;
     }
+
 
     .portfolio__images {
         display: flex;
         flex-wrap: wrap;
     }
 
+
     .portfolio__icon {
         width: 40%;
     }
 
+
     .social {
         margin-left: 7px;
-        margin-bottom: 10px;
+        margin-bottom: 0;
         width: 160px;
     }
+
 
     .about__column {
         flex-wrap: wrap;
@@ -774,6 +782,12 @@ textarea {
     .logo {
         margin-left: -20px;
     }
+
+
+    .slick-prev {
+        margin-bottom: 5px;
+    }
+
 }
 
 
@@ -782,51 +796,64 @@ textarea {
 
 @media screen and (max-width: 568px) {
 
+
+
     .slick-list {
         padding-top: 6rem;
     }
 
+
     .btn-btn {
-        margin-bottom: 25px;
+        margin-top: -30px;
     }
+
 
     .nav__item {
         margin-right: -15px;
     }
 
+
     .burger {
         display: none;
     }
+
 
     .panel__logo img {
         margin-left: -38px;
     }
 
+
     .header__title {
         font-size: 3.1rem;
     }
+
 
     .portfolio__icon {
         width: 40%;
         display: block;
     }
 
+
     .form__inner {
         width: 100%;
     }
+
 
     .input-left {
         width: 150px;
     }
 
+
     .input-right {
         width: 150px;
     }
+
 
     textarea {
         width: 300px;
         height: 100px;
     }
+
 
     .about__content {
         margin-bottom: 30px;
@@ -838,25 +865,36 @@ textarea {
         margin-bottom: 0;
     }
 
+
     .social {
         margin-left: -5px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
+
+
     .footer__text {
         width: 75%;
     }
+
 }
 
 
 
+
+
 @media screen and (max-width: 414px) {
+
+
+     .header {
+        height: 630px;
+    }
+
+
+
     .panel__logo img {
         margin-left: -30px;
     }
 
-    .panel__top {
-        width: 100%;
-    }
 
 
     .slick-list {
@@ -876,9 +914,11 @@ textarea {
     }
 
 
+
     .burger {
         display: block;
     }
+
 
 
     .btn-btn {
@@ -894,14 +934,14 @@ textarea {
 
 
     .social {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         margin-left: 12px;
     }
 
 
 
     .form__block {
-        display: none;
+       flex-wrap: wrap;
     }
 
 
@@ -911,14 +951,17 @@ textarea {
     }
 
 
+
     .header__intro {
         padding-top: 50px;
     }
 
 
+
     .slick-prev {
         margin-top: 18px;
     }
+
 
 
     .portfolio {
@@ -930,6 +973,7 @@ textarea {
     .about {
         padding: 30px 0px 0px;
     }
+
 
 
     .about__block {
@@ -946,13 +990,20 @@ textarea {
 
     .contact {
        padding: 30px 0px 0px;
-
     }
+
+
+
+    .contact__text {
+        margin-bottom: 30px;
+    }
+
 
 
     .btn {
         margin-bottom: 25px;
     }
+
 
 
     .portfolio__text {
@@ -962,8 +1013,58 @@ textarea {
 
 
 
+    .portfolio__text {
+        line-height: 1.3rem;
+    }
+
+
+
+    .about__text {
+        line-height: 1.3rem;
+    }
+
+
+
+    .contact__text {
+        line-height: 1.3rem;
+    }
+
+
+
+    .info {
+        padding: 25px 0px;
+    }
+
+
+
+
+    .input-left {
+        width: 150px;
+    }
+
+
+
+    .input-right {
+        width: 150px;
+    }
+
+
+
+
+     textarea {
+        width: 100%;
+        height: 100px;
+    }
+
+
+
+
+
+
 
 @media screen and (max-width: 375px) {
+
+
     .slick-list {
         padding: 5px;
     }
@@ -972,60 +1073,63 @@ textarea {
 
 
 
+
+
 @media screen and (max-width: 320px) {
-    .panel__top {
-        width: 100%;
-    }
+
+
 
     .header__title {
         font-size: 3rem;
     }
 
-    .header {
-        width: 100%;
-    }
+
+
 
     .header__text {
         margin-top: -25px;
     }
 
-    .portfolio__text {
-        line-height: 1.3rem;
-    }
+
+
 
     .about__text {
         line-height: 1.3rem;
     }
 
+
+
     .contact__text {
         line-height: 1.3rem;
+        margin-bottom: 30px;
     }
 
-    .btn-btn {
-        display: none;
-    }
 
-    .form__block {
-        display: none;
-    }
 
     .slick-list {
         padding: 0;
     }
 
 
-    .social {
-        margin-left: 12px;
-        margin-top: 10px;
+
+
+    .input-left {
+        width: 130px;
     }
 
-     .about__block {
+
+
+    .input-right {
+        width: 130px;
+    }
+
+
+
+    textarea {
         width: 100%;
+        height: 100px;
     }
-
 }
-
-
 
 
 
